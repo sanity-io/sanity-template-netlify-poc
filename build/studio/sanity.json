@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "sanity-template-content"
+    "name": "Netlify POC"
   },
   "api": {
     "projectId": "jmhf2rn8",

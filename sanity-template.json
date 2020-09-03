@@ -4,7 +4,7 @@
   "description": "Minimal and barebones example of a starter for deployment on Netlify",
   "previewMedia": {
     "type": "image",
-    "src": "assets/preview.png",
+    "src": "assets/netlify.png",
     "alt": "Netlify"
   },
   "technologies": [
@@ -19,6 +19,7 @@
     "sites": [
       {
         "id": "studio",
+        "type": "studio",
         "title": "Sanity Studio",
         "description": "The Sanity Studio is where you edit and structure your content.",
         "dir": "./studio",
@@ -28,27 +29,28 @@
           "alt": "A preview image of the Sanity Studio."
         },
         "buildSettings": {
-          "base": "/",
-          "dir": "/studio/dist",
-          "cmd": "npm run build-studio && cp studio/netlify.toml studio/dist"
+          "base": "studio",
+          "dir": "dist",
+          "cmd": "npm run build && cp netlify.toml dist"
         },
         "requirements": ["build-hook"]
       },
       {
         "id": "web",
+        "type": "web",
         "title": "Blog Website",
         "requirements": ["build-hook"],
-        "description": "A blazing fast blog, made for being easy to customize and update.",
+        "description": "A minimal example of a frontend fetching data from Sanity.io.",
         "dir": "./web",
         "buildSettings": {
-          "base": "/",
-          "dir": "/web/public",
-          "cmd": "mkdir public && cp index.html public/index.html"
+          "base": "web",
+          "dir": "public",
+          "cmd": "cp index.html public/index.html"
         },
         "previewMedia": {
           "type": "image",
-          "src": "assets/frontend.jpg",
-          "alt": "A preview image of the blog website."
+          "src": "assets/frontend.png",
+          "alt": "A preview image of the webpage."
         }
       }
     ]

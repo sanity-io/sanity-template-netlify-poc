@@ -1,11 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "sanity-template-content"
+    "name": "<#< sanity.projectTitle >#>"
   },
   "api": {
-    "projectId": "jmhf2rn8",
-    "dataset": "netlify-poc"
+    "projectId": "<#< sanity.projectId >#>",
+    "dataset": "<#< sanity.dataset >#>"
   },
   "plugins": [
     "@sanity/base",
@@ -21,10 +21,8 @@
       ]
     }
   },
-  "parts": [
-    {
-      "name": "part:@sanity/base/schema",
-      "path": "./schemas/schema"
-    }
-  ]
+  "parts": [{
+    "name": "part:@sanity/base/schema",
+    "path": "./schemas/schema"
+  }]
 }
