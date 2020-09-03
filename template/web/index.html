@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Minimal template starter example</title>
+  </head>
+  <body>
+    <div id="root">Let’s load some content over APIs!</div>
+  </body>
+  <script>
+    const content = fetch(
+      "https://zp7mbokg.api.sanity.io/v1/data/query/production?query=*[0]"
+    );
+    const root = document.querySelector("#root");
+    root.textContent = content;
+  </script>
+</html>
