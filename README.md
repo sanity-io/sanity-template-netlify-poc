@@ -1,4 +1,4 @@
-# sanity.io/create stater template starter for Netlify
+# sanity.io/create starter template starter for Netlify
 
 This is a barebones example of how to create a starter template for <a href="https://www.sanity.io/create?template=sanity-io/sanity-template-netlify-poc">sanity.io/create</a>.
 
