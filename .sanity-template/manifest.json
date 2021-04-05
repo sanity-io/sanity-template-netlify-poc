@@ -4,7 +4,7 @@
   "description": "Minimal and barebones example of a starter for deployment on Netlify",
   "previewMedia": {
     "type": "image",
-    "src": "assets/netlify.png",
+    "src": ".sanity-template/assets/netlify.png",
     "alt": "Netlify"
   },
   "technologies": [
@@ -25,7 +25,7 @@
         "dir": "../studio",
         "previewMedia": {
           "type": "image",
-          "src": "assets/studio.jpg",
+          "src": ".sanity-template/assets/studio.jpg",
           "alt": "A preview image of the Sanity Studio."
         },
         "buildSettings": {
@@ -49,7 +49,7 @@
         },
         "previewMedia": {
           "type": "image",
-          "src": "assets/frontend.png",
+          "src": ".sanity-template/assets/frontend.png",
           "alt": "A preview image of the webpage."
         }
       }
